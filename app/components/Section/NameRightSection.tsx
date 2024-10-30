@@ -1,5 +1,6 @@
 import { Heading } from '@chakra-ui/react';
 import { Newsreader } from 'next/font/google';
+import localFont from 'next/font/local';
 import React from 'react'
 
 interface NameRightSectionProps {
@@ -12,6 +13,12 @@ const newsreader = Newsreader({
     weight: "300",
     subsets: ["latin"],
     });
+
+// const butler = localFont({
+//     // name: "Butler",
+//     weight: "300",
+//     src: ".Butler_Light.otf",
+//     });
 
 const NameRightSection: React.FC<NameRightSectionProps> = ({ girlsName, boysName, hashtag }) => {
   return (

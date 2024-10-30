@@ -8,6 +8,12 @@ const newsreader = Newsreader({
   subsets: ["latin"],
 });
 
+const butler = localFont({
+  // name: "Butler",
+  weight: "200",
+  src: "./Butler_Light.otf",
+});
+
 interface NameTextProps {
   girlsName: string;
   boysName: string;
